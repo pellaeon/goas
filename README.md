@@ -239,8 +239,9 @@ And now have fun. ;)
 
 ## Contributors
 
-- Frank Mueller - <mue@tideland.biz>
-- Benedikt Lang - <github@benediktlang.de>
+- Frank Mueller (https://github.com/TheMue)
+- Benedikt Lang (https://github.com/blang)
+- Tim Heckman (https://github.com/theckman)
 
 ## License
 

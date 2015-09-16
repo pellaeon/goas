@@ -9,15 +9,15 @@ always need. See their descriptions below.
 ## Installation
 
 ```
-go get github.com/tideland/goas/v3/errors
-go get github.com/tideland/goas/v2/identifier
-go get github.com/tideland/goas/v2/logger
-go get github.com/tideland/goas/v3/logger
-go get github.com/tideland/goas/v2/loop
-go get github.com/tideland/goas/v2/monitoring
-go get github.com/tideland/goas/v1/scene
-go get github.com/tideland/goas/v2/timex
-go get github.com/tideland/goas/v1/version
+go get github.com/pellaeon/goas/v3/errors
+go get github.com/pellaeon/goas/v2/identifier
+go get github.com/pellaeon/goas/v2/logger
+go get github.com/pellaeon/goas/v3/logger
+go get github.com/pellaeon/goas/v2/loop
+go get github.com/pellaeon/goas/v2/monitoring
+go get github.com/pellaeon/goas/v1/scene
+go get github.com/pellaeon/goas/v2/timex
+go get github.com/pellaeon/goas/v1/version
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ The errors package allows to easily create formatted errors with `errors.New()` 
 `errors.Annotate()` like with the `fmt.Errorf()` function, but also with an error code. 
 This easily can be tested with `errors.IsError(err, code)`. 
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v3/errors?status.svg)](https://godoc.org/github.com/tideland/goas/v3/errors)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v3/errors?status.svg)](https://godoc.org/github.com/tideland/goas/v3/errors)
 
 ### Identifier
 
@@ -48,7 +48,7 @@ Other identifier types are based on passed data or types. Here the individual pa
 harmonized and concatenated by the passed seperators. It is the users responsibility to 
 check if the identifier is unique in its context.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v2/identifier?status.svg)](https://godoc.org/github.com/tideland/goas/v2/identifier)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v2/identifier?status.svg)](https://godoc.org/github.com/tideland/goas/v2/identifier)
 
 ### Logger
 
@@ -59,7 +59,7 @@ io.Writer or the Go logging. Own backends can be defined based on a simple inter
 Setting the level controls what will be logged. `Debugf()` and `Criticalf()` logging also 
 print filename, function name and line number.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v2/logger?status.svg)](https://godoc.org/github.com/tideland/goas/v2/logger)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v2/logger?status.svg)](https://godoc.org/github.com/tideland/goas/v2/logger)
 
 #### Version 3
 
@@ -67,7 +67,7 @@ Like version 2, but with new log level *Fatal*. After logging it directly ends t
 with a return code of -1 or with a panic. Own functions for the termination after `Fatalf()`
 can be set too.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v3/logger?status.svg)](https://godoc.org/github.com/tideland/goas/v3/logger)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v3/logger?status.svg)](https://godoc.org/github.com/tideland/goas/v3/logger)
 
 ### Loop
 
@@ -109,7 +109,7 @@ Another variant is `loop.GoRecoverable(f.backendLoop, f.recoverFunc)`. Here a lo
 or the value of a recovering after a panic are passed to the recover function. It then
 can decide if the loop shall be restarted or really terminated.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v2/loop?status.svg)](https://godoc.org/github.com/tideland/goas/v2/loop)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v2/loop?status.svg)](https://godoc.org/github.com/tideland/goas/v2/loop)
 
 ### Monitoring
 
@@ -129,7 +129,7 @@ monitoring.DecrVariable("bar")
 monitoring.Register("baz", func() (string, error) { ... })
 ```
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v2/monitoring?status.svg)](https://godoc.org/github.com/tideland/goas/v2/monitoring)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v2/monitoring?status.svg)](https://godoc.org/github.com/tideland/goas/v2/monitoring)
 
 ### Scene
 
@@ -211,14 +211,14 @@ Now the scene is stopped after 5 minutes without any access or at the
 latest 60 minutes after the start. Both value may be zero if not needed.
 So `scene.StartLimited(0, 0)` is the same as `scene.Start()`.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v1/scene?status.svg)](https://godoc.org/github.com/tideland/goas/v1/scene)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v1/scene?status.svg)](https://godoc.org/github.com/tideland/goas/v1/scene)
 
 ### Timex
 
 The timex package supports the work with dates and times. Additionally it provides a
 simple crontab.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v2/timex?status.svg)](https://godoc.org/github.com/tideland/goas/v2/timex)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v2/timex?status.svg)](https://godoc.org/github.com/tideland/goas/v2/timex)
 
 ### Version
 
@@ -233,7 +233,7 @@ Here given a version number MAJOR.MINOR.PATCH, increment the:
 Additional labels for pre-release and build metadata are available as extensions to the 
 MAJOR.MINOR.PATCH format.
 
-[![GoDoc](https://godoc.org/github.com/tideland/goas/v1/version?status.svg)](https://godoc.org/github.com/tideland/goas/v1/version)
+[![GoDoc](https://godoc.org/github.com/pellaeon/goas/v1/version?status.svg)](https://godoc.org/github.com/tideland/goas/v1/version)
 
 And now have fun. ;)
 

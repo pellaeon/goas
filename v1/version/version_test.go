@@ -14,8 +14,8 @@ package version_test
 import (
 	"testing"
 
-	"github.com/tideland/goas/v1/version"
-	"github.com/tideland/gots/v3/asserts"
+	"github.com/pellaeon/goas/v1/version"
+	"github.com/pellaeon/gots/v3/asserts"
 )
 
 //--------------------

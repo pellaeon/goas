@@ -16,8 +16,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tideland/goas/v3/logger"
-	"github.com/tideland/gots/v3/asserts"
+	"github.com/pellaeon/goas/v3/logger"
+	"github.com/pellaeon/gots/v3/asserts"
 )
 
 //--------------------

@@ -84,7 +84,7 @@ package scene
 //--------------------
 
 import (
-	"github.com/tideland/goas/v1/version"
+	"github.com/pellaeon/goas/v1/version"
 )
 
 //--------------------

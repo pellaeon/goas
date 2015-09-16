@@ -21,7 +21,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/tideland/goas/v3/errors"
+	"github.com/pellaeon/goas/v3/errors"
 )
 
 //--------------------

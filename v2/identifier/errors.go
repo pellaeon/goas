@@ -12,7 +12,7 @@ package identifier
 //--------------------
 
 import (
-	"github.com/tideland/goas/v3/errors"
+	"github.com/pellaeon/goas/v3/errors"
 )
 
 //--------------------

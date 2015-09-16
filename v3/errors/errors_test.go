@@ -14,8 +14,8 @@ package errors_test
 import (
 	"testing"
 
-	"github.com/tideland/goas/v3/errors"
-	"github.com/tideland/gots/v3/asserts"
+	"github.com/pellaeon/goas/v3/errors"
+	"github.com/pellaeon/gots/v3/asserts"
 )
 
 //--------------------
@@ -33,7 +33,7 @@ func TestValidation(t *testing.T) {
 
 	assert.True(errors.Valid(err))
 	assert.Nil(lerr)
-	assert.Equal(packageName, "github.com/tideland/goas/v3/errors_test")
+	assert.Equal(packageName, "github.com/pellaeon/goas/v3/errors_test")
 	assert.Equal(fileName, "errors_test.go")
 	assert.Equal(line, 31)
 }

@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tideland/goas/v2/monitoring"
-	"github.com/tideland/gots/v3/asserts"
+	"github.com/pellaeon/goas/v2/monitoring"
+	"github.com/pellaeon/gots/v3/asserts"
 )
 
 //--------------------

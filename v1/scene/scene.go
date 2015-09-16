@@ -14,9 +14,9 @@ package scene
 import (
 	"time"
 
-	"github.com/tideland/goas/v2/identifier"
-	"github.com/tideland/goas/v2/loop"
-	"github.com/tideland/goas/v3/errors"
+	"github.com/pellaeon/goas/v2/identifier"
+	"github.com/pellaeon/goas/v2/loop"
+	"github.com/pellaeon/goas/v3/errors"
 )
 
 //--------------------
